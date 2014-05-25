@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<project>
+	<settings>
+		<globalRayDensity value="1000000" />
+		<description>Benchmarking geometry for C-77</description>
+	</settings>
+	<geometry>
+		<primitive type="cylinderSurface">
+            <smallRadius value="1" />
+            <scale x="2" y="2" z="1" />
+		</primitive>
+        <primitive type="annulus">
+            <smallRadius value="2" />
+            <largeRadius value="3" />
+		</primitive>>
+	</geometry>
+</project>

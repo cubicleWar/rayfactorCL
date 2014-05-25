@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<project>
+	<settings>
+		<globalRayDensity value="1000000" />
+		<description>Benchmarking geometry for C-109</description>
+	</settings>
+	<geometry>
+		<primitive type="cylinderSurface" isBounding="true" >
+            <smallRadius value="0" />
+		</primitive>
+        <primitive type="disc" >
+            <scale x="1.0" y="1.0" z="1.0" />
+		</primitive>
+	</geometry>
+</project>

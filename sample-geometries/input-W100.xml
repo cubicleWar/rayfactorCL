@@ -1,0 +1,284 @@
+<?xml version="1.0" ?>
+<project>
+	<settings>
+		<globalRayDensity value="1000000" />
+		<description>This is the fibre drawing furnance for non deforming fibre</description>
+	</settings>
+	<geometry>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="0" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="1" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="2" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="3" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="4" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="5" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="6" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="7" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="8" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="9" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="10" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="11" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="12" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="13" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="14" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="15" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="16" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="17" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="18" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="19" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="20" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="21" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="22" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="23" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="24" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="25" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="26" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="27" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="28" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="29" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="30" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="31" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="0.999998" />
+			<translation x="0" y="0" z="32" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="33" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="34" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="35" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="36" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="37" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="38" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="39" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="40" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="41" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="42" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="43" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="44" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="45" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="46" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="47" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="48" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="49" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="50" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="51" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="52" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="53" />
+		</primitive>
+		<primitive type="cylinderSurface" isBounding="true" >
+			<smallRadius value="1" />
+			<scale x="32" y="32" z="1" />
+			<translation x="0" y="0" z="54" />
+		</primitive>
+	</geometry>
+</project>

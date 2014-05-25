@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B89E6A8B15089D7D0063D359 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B89E6A8915089D7D0063D359 /* main.cpp */; };
+		B89E6AF91508CE980063D359 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89E6AF81508CE980063D359 /* OpenCL.framework */; };
+		B8F27B9D1526934D00F76E4A /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8F27B9B1526934C00F76E4A /* Scene.cpp */; };
+		B8F27BB01526D2D900F76E4A /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8F27BAE1526D2D900F76E4A /* tinyxml2.cpp */; };
+		B8F27BB71526EE2E00F76E4A /* AffineTransformation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8F27BB21526EE2E00F76E4A /* AffineTransformation.cpp */; };
+		B8F27BB81526EE2E00F76E4A /* Matrices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8F27BB41526EE2E00F76E4A /* Matrices.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B829DB02150F519800A16758 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		B829DB03150F519800A16758 /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		B829DB04150F519800A16758 /* ars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ars.h; sourceTree = "<group>"; };
+		B829DB06150F519800A16758 /* Engine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Engine.hpp; sourceTree = "<group>"; };
+		B829DB07150F519800A16758 /* gsl_cbrng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsl_cbrng.h; sourceTree = "<group>"; };
+		B829DB09150F519800A16758 /* compilerfeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compilerfeatures.h; sourceTree = "<group>"; };
+		B829DB0A150F519800A16758 /* gccfeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gccfeatures.h; sourceTree = "<group>"; };
+		B829DB0B150F519800A16758 /* iccfeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iccfeatures.h; sourceTree = "<group>"; };
+		B829DB0C150F519800A16758 /* llvmfeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llvmfeatures.h; sourceTree = "<group>"; };
+		B829DB0D150F519800A16758 /* msvcfeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msvcfeatures.h; sourceTree = "<group>"; };
+		B829DB0E150F519800A16758 /* nvccfeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nvccfeatures.h; sourceTree = "<group>"; };
+		B829DB0F150F519800A16758 /* open64features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = open64features.h; sourceTree = "<group>"; };
+		B829DB10150F519800A16758 /* openclfeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openclfeatures.h; sourceTree = "<group>"; };
+		B829DB11150F519800A16758 /* sse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sse.h; sourceTree = "<group>"; };
+		B829DB12150F519800A16758 /* sunprofeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sunprofeatures.h; sourceTree = "<group>"; };
+		B829DB13150F519800A16758 /* gsl_microrng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsl_microrng.h; sourceTree = "<group>"; };
+		B829DB14150F519800A16758 /* MicroURNG.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MicroURNG.hpp; sourceTree = "<group>"; };
+		B829DB15150F519800A16758 /* philox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = philox.h; sourceTree = "<group>"; };
+		B829DB16150F519800A16758 /* ReinterpretCtr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReinterpretCtr.hpp; sourceTree = "<group>"; };
+		B829DB17150F519800A16758 /* threefry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threefry.h; sourceTree = "<group>"; };
+		B829DB391511B5E900A16758 /* u01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = u01.h; sourceTree = "<group>"; };
+		B829DB8C1512000800A16758 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+		B829DB931514424500A16758 /* util_opencl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util_opencl.h; sourceTree = "<group>"; };
+		B829DB941514428C00A16758 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		B829DB95151442AA00A16758 /* util_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util_macros.h; sourceTree = "<group>"; };
+		B89E6A6C15089D570063D359 /* RayFactorCL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayFactorCL; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89E6A8915089D7D0063D359 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B89E6AE21508B48A0063D359 /* cycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cycle.h; sourceTree = "<group>"; };
+		B89E6AF81508CE980063D359 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = /System/Library/Frameworks/OpenCL.framework; sourceTree = "<absolute>"; };
+		B8D5681F16F9B69D0065C67A /* RayFactorGPU.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = RayFactorGPU.cl; sourceTree = "<group>"; };
+		B8D5682616FA6B610065C67A /* RayFactorGPU-lvfm.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = "RayFactorGPU-lvfm.cl"; sourceTree = "<group>"; };
+		B8F27B9B1526934C00F76E4A /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		B8F27B9C1526934C00F76E4A /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		B8F27B9E1526961800F76E4A /* RayfactorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayfactorConstants.h; sourceTree = "<group>"; };
+		B8F27BAE1526D2D900F76E4A /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml2.cpp; sourceTree = "<group>"; };
+		B8F27BAF1526D2D900F76E4A /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
+		B8F27BB21526EE2E00F76E4A /* AffineTransformation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AffineTransformation.cpp; sourceTree = "<group>"; };
+		B8F27BB31526EE2E00F76E4A /* AffineTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineTransformation.h; sourceTree = "<group>"; };
+		B8F27BB41526EE2E00F76E4A /* Matrices.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrices.cpp; sourceTree = "<group>"; };
+		B8F27BB51526EE2E00F76E4A /* Matrices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrices.h; sourceTree = "<group>"; };
+		B8F27BB61526EE2E00F76E4A /* Matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix4.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B89E6A6915089D570063D359 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89E6AF91508CE980063D359 /* OpenCL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B829DB01150F519800A16758 /* Random123 */ = {
+			isa = PBXGroup;
+			children = (
+				B829DB02150F519800A16758 /* aes.h */,
+				B829DB03150F519800A16758 /* array.h */,
+				B829DB04150F519800A16758 /* ars.h */,
+				B829DB05150F519800A16758 /* conventional */,
+				B829DB08150F519800A16758 /* features */,
+				B829DB13150F519800A16758 /* gsl_microrng.h */,
+				B829DB14150F519800A16758 /* MicroURNG.hpp */,
+				B829DB15150F519800A16758 /* philox.h */,
+				B829DB16150F519800A16758 /* ReinterpretCtr.hpp */,
+				B829DB17150F519800A16758 /* threefry.h */,
+				B829DB391511B5E900A16758 /* u01.h */,
+			);
+			path = Random123;
+			sourceTree = "<group>";
+		};
+		B829DB05150F519800A16758 /* conventional */ = {
+			isa = PBXGroup;
+			children = (
+				B829DB06150F519800A16758 /* Engine.hpp */,
+				B829DB07150F519800A16758 /* gsl_cbrng.h */,
+			);
+			path = conventional;
+			sourceTree = "<group>";
+		};
+		B829DB08150F519800A16758 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				B829DB09150F519800A16758 /* compilerfeatures.h */,
+				B829DB0A150F519800A16758 /* gccfeatures.h */,
+				B829DB0B150F519800A16758 /* iccfeatures.h */,
+				B829DB0C150F519800A16758 /* llvmfeatures.h */,
+				B829DB0D150F519800A16758 /* msvcfeatures.h */,
+				B829DB0E150F519800A16758 /* nvccfeatures.h */,
+				B829DB0F150F519800A16758 /* open64features.h */,
+				B829DB10150F519800A16758 /* openclfeatures.h */,
+				B829DB11150F519800A16758 /* sse.h */,
+				B829DB12150F519800A16758 /* sunprofeatures.h */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		B89E6A6115089D570063D359 = {
+			isa = PBXGroup;
+			children = (
+				B89E6A6F15089D570063D359 /* RayFactorCL */,
+				B89E6A8E15089DE50063D359 /* Frameworks */,
+				B89E6A6D15089D570063D359 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B89E6A6D15089D570063D359 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B89E6A6C15089D570063D359 /* RayFactorCL */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B89E6A6F15089D570063D359 /* RayFactorCL */ = {
+			isa = PBXGroup;
+			children = (
+				B829DB01150F519800A16758 /* Random123 */,
+				B8F27BAD1526D2D900F76E4A /* TinyXML-2 */,
+				B8F27BB11526EE2D00F76E4A /* Affine Transformation */,
+				B89E6AE21508B48A0063D359 /* cycle.h */,
+				B8F27B9C1526934C00F76E4A /* Scene.h */,
+				B8F27B9B1526934C00F76E4A /* Scene.cpp */,
+				B8F27B9E1526961800F76E4A /* RayfactorConstants.h */,
+				B89E6A8915089D7D0063D359 /* main.cpp */,
+				B829DB941514428C00A16758 /* util.h */,
+				B829DB95151442AA00A16758 /* util_macros.h */,
+				B829DB931514424500A16758 /* util_opencl.h */,
+				B8D5682616FA6B610065C67A /* RayFactorGPU-lvfm.cl */,
+				B8D5681F16F9B69D0065C67A /* RayFactorGPU.cl */,
+				B829DB8C1512000800A16758 /* Notes */,
+			);
+			path = RayFactorCL;
+			sourceTree = "<group>";
+		};
+		B89E6A8E15089DE50063D359 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B89E6AF81508CE980063D359 /* OpenCL.framework */,
+			);
+			name = Frameworks;
+			path = RayFactorCL;
+			sourceTree = "<group>";
+		};
+		B8F27BAD1526D2D900F76E4A /* TinyXML-2 */ = {
+			isa = PBXGroup;
+			children = (
+				B8F27BAE1526D2D900F76E4A /* tinyxml2.cpp */,
+				B8F27BAF1526D2D900F76E4A /* tinyxml2.h */,
+			);
+			path = "TinyXML-2";
+			sourceTree = "<group>";
+		};
+		B8F27BB11526EE2D00F76E4A /* Affine Transformation */ = {
+			isa = PBXGroup;
+			children = (
+				B8F27BB31526EE2E00F76E4A /* AffineTransformation.h */,
+				B8F27BB21526EE2E00F76E4A /* AffineTransformation.cpp */,
+				B8F27BB41526EE2E00F76E4A /* Matrices.cpp */,
+				B8F27BB51526EE2E00F76E4A /* Matrices.h */,
+				B8F27BB61526EE2E00F76E4A /* Matrix4.h */,
+			);
+			path = "Affine Transformation";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B89E6A6B15089D570063D359 /* RayFactorCL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B89E6A7615089D570063D359 /* Build configuration list for PBXNativeTarget "RayFactorCL" */;
+			buildPhases = (
+				B89E6A6815089D570063D359 /* Sources */,
+				B89E6A6915089D570063D359 /* Frameworks */,
+				B89E6AFC15096A3D0063D359 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayFactorCL;
+			productName = RayFactorCL;
+			productReference = B89E6A6C15089D570063D359 /* RayFactorCL */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B89E6A6315089D570063D359 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Native Dynamics";
+			};
+			buildConfigurationList = B89E6A6615089D570063D359 /* Build configuration list for PBXProject "RayFactorCL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B89E6A6115089D570063D359;
+			productRefGroup = B89E6A6D15089D570063D359 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B89E6A6B15089D570063D359 /* RayFactorCL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B89E6AFC15096A3D0063D359 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Copying files\"\n\ncp \"$SRCROOT/RayFactorCL/RayFactorGPU.cl\" \"$TARGET_BUILD_DIR/RayFactorGPU.cl\"\ncp \"$SRCROOT/RayFactorCL/RayFactorGPU-lvfm.cl\" \"$TARGET_BUILD_DIR/RayFactorGPU-lvfm.cl\"\n\ncp -r \"$SRCROOT/sample-geometries/\" \"$TARGET_BUILD_DIR\"\n\nif [ ! -d \"$TARGET_BUILD_DIR/Random123\" ]\nthen\n    cp -r \"$SRCROOT/RayFactorCL/Random123\" \"$TARGET_BUILD_DIR/Random123\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B89E6A6815089D570063D359 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89E6A8B15089D7D0063D359 /* main.cpp in Sources */,
+				B8F27B9D1526934D00F76E4A /* Scene.cpp in Sources */,
+				B8F27BB01526D2D900F76E4A /* tinyxml2.cpp in Sources */,
+				B8F27BB71526EE2E00F76E4A /* AffineTransformation.cpp in Sources */,
+				B8F27BB81526EE2E00F76E4A /* Matrices.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B89E6A7415089D570063D359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OPENCL_PREPROCESSOR_DEFINITIONS = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B89E6A7515089D570063D359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_STRICT_ALIASING = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OPENCL_PREPROCESSOR_DEFINITIONS = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B89E6A7715089D570063D359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/OpenCL.framework\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B89E6A7815089D570063D359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/OpenCL.framework\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B89E6A6615089D570063D359 /* Build configuration list for PBXProject "RayFactorCL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89E6A7415089D570063D359 /* Debug */,
+				B89E6A7515089D570063D359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B89E6A7615089D570063D359 /* Build configuration list for PBXNativeTarget "RayFactorCL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89E6A7715089D570063D359 /* Debug */,
+				B89E6A7815089D570063D359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B89E6A6315089D570063D359 /* Project object */;
+}
