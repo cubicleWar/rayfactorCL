@@ -3,7 +3,7 @@
 	<settings>
 		<globalRayDensity value="1000000" />
 		<description>C-14 Perpendicular rectangles with a common edge</description>
-        <boundingvolumes value="true" />
+        <useBoundingVolumes value="true" />
 	</settings>
 	<geometry>
         <bv type="rectangle">

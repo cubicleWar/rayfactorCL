@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<project>
+	<settings>
+		<globalRayDensity value="1000000" />
+		<description>Benchmarking geometry for C-52 Ring to coaxial parallel ring</description>
+        <useBoundingVolumes value="true" />
+	</settings>
+	<geometry>
+        <bv type="annulus">
+            <smallRadius value="0.5" />
+            <largeRadius value="1" />
+            <rotate degrees="180" x="1" y="0" z="0" />
+            <translation x="0" y="0" z="1" />
+            <children>
+                <primitive type="annulus">
+                    <smallRadius value="0.5" />
+                    <largeRadius value="1" />
+                    <rotate degrees="180" x="1" y="0" z="0" />
+                    <translation x="0" y="0" z="1" />
+                </primitive>
+            </children>
+        </bv>
+        <bv type="annulus">
+            <smallRadius value="1.5" />
+            <largeRadius value="2.0" />
+            <children>
+                <primitive type="annulus">
+                    <smallRadius value="1.5" />
+                    <largeRadius value="2.0" />
+                </primitive>
+            </children>
+        </bv>
+	</geometry>
+</project>

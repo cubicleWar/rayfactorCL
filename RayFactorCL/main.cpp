@@ -76,7 +76,6 @@ int runCL_GPURNG(int n_samples, Scene &scene)
     
     char *program_source = load_program_source(filename);
     
-    
     cl_int err = 0;
     size_t nthreads, buffer_size;
     cl_mem objects_mem, bvs_mem;

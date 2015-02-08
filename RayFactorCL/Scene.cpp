@@ -85,11 +85,10 @@ bool Scene::loadSettings( tinyxml2::XMLElement *settings )
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//	Scene::loadGeometry
+//	Scene::loadBoundingVolumes
 //
-//	Comments : Is the higher level handler for the primitives stored in the <geometry> xml block. It
-//			   will determine what type of primitive is specified, create the primitive object, extract
-//			   any unique attributes than pass it on for parsing of the generic primitive properties
+//	Comments : Similar to Scene::loadGeometry but handles bounding volumes which encapsulate the
+//              primitive definitions
 //
 //	@param geometry : A pointer to a TinyXmlElement which contains the <geometry> block.
 //
@@ -199,8 +198,12 @@ bool Scene::loadGeometry( tinyxml2::XMLElement *geometry )
 		if(strcmp(prType, "cylinderSurface") == 0 || strcmp(prType, "taperedCylinderSurface") == 0 || strcmp(prType, "frustum") == 0)
         {
 			
-			float smallRadius;
-			primitive->FirstChildElement( "smallRadius" )->QueryFloatAttribute( "value", &smallRadius );
+			float smallRadius = 1.f;
+            tinyxml2::XMLElement *smallRadiusNode = primitive->FirstChildElement( "smallRadius" );
+            
+            if(smallRadiusNode != NULL) {
+               smallRadiusNode->QueryFloatAttribute( "value", &smallRadius);
+            }
             
             // Handle whether to use a faster primitive based on its type i.e cone, cylinder, frustum
             

@@ -178,7 +178,6 @@ static UCLInfo *opencl_init(const char *devstr, const char *src, const char *opt
                 validDevices++;
             }
         }
-        std::cout << "Start valid devices : " << validDevices << std::endl;
         
         deviceInfo = (UCLInfo *)malloc(sizeof(UCLInfo)*validDevices);
         
