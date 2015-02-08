@@ -25,6 +25,7 @@ void preMultiply(Matrix4 &x, const Matrix4 &a)
     Matrix4 tmp = x;
     
     for(int c = 0; c < 4; c++)
+    {
         for(int r = 0; r < 4; r++)
         {
             sum = 0;
@@ -34,6 +35,7 @@ void preMultiply(Matrix4 &x, const Matrix4 &a)
             }
             x.m[4*c+r] = sum;
         }
+    }
 }
 
 // Postmultiple x by a
@@ -43,6 +45,7 @@ void postMultiply(Matrix4 &x, const Matrix4 &a)
     Matrix4 tmp = x;
     
     for(int c = 0; c < 4; c++)
+    {
         for(int r = 0; r < 4; r++)
         {
             sum = 0;
@@ -52,4 +55,5 @@ void postMultiply(Matrix4 &x, const Matrix4 &a)
             }
             x.m[4*c+r] = sum;
         }
+    }
 }

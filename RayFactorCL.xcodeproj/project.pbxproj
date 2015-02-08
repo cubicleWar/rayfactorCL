@@ -37,7 +37,6 @@
 		B829DB16150F519800A16758 /* ReinterpretCtr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReinterpretCtr.hpp; sourceTree = "<group>"; };
 		B829DB17150F519800A16758 /* threefry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threefry.h; sourceTree = "<group>"; };
 		B829DB391511B5E900A16758 /* u01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = u01.h; sourceTree = "<group>"; };
-		B829DB8C1512000800A16758 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		B829DB931514424500A16758 /* util_opencl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util_opencl.h; sourceTree = "<group>"; };
 		B829DB941514428C00A16758 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		B829DB95151442AA00A16758 /* util_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util_macros.h; sourceTree = "<group>"; };
@@ -46,7 +45,6 @@
 		B89E6AE21508B48A0063D359 /* cycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cycle.h; sourceTree = "<group>"; };
 		B89E6AF81508CE980063D359 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = /System/Library/Frameworks/OpenCL.framework; sourceTree = "<absolute>"; };
 		B8D5681F16F9B69D0065C67A /* RayFactorGPU.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = RayFactorGPU.cl; sourceTree = "<group>"; };
-		B8D5682616FA6B610065C67A /* RayFactorGPU-lvfm.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = "RayFactorGPU-lvfm.cl"; sourceTree = "<group>"; };
 		B8F27B9B1526934C00F76E4A /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		B8F27B9C1526934C00F76E4A /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		B8F27B9E1526961800F76E4A /* RayfactorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayfactorConstants.h; sourceTree = "<group>"; };
@@ -135,20 +133,15 @@
 		B89E6A6F15089D570063D359 /* RayFactorCL */ = {
 			isa = PBXGroup;
 			children = (
+				B8A6C4471A86DFFA00A15693 /* Utilities */,
 				B829DB01150F519800A16758 /* Random123 */,
 				B8F27BAD1526D2D900F76E4A /* TinyXML-2 */,
 				B8F27BB11526EE2D00F76E4A /* Affine Transformation */,
-				B89E6AE21508B48A0063D359 /* cycle.h */,
 				B8F27B9C1526934C00F76E4A /* Scene.h */,
 				B8F27B9B1526934C00F76E4A /* Scene.cpp */,
 				B8F27B9E1526961800F76E4A /* RayfactorConstants.h */,
 				B89E6A8915089D7D0063D359 /* main.cpp */,
-				B829DB941514428C00A16758 /* util.h */,
-				B829DB95151442AA00A16758 /* util_macros.h */,
-				B829DB931514424500A16758 /* util_opencl.h */,
-				B8D5682616FA6B610065C67A /* RayFactorGPU-lvfm.cl */,
 				B8D5681F16F9B69D0065C67A /* RayFactorGPU.cl */,
-				B829DB8C1512000800A16758 /* Notes */,
 			);
 			path = RayFactorCL;
 			sourceTree = "<group>";
@@ -160,6 +153,17 @@
 			);
 			name = Frameworks;
 			path = RayFactorCL;
+			sourceTree = "<group>";
+		};
+		B8A6C4471A86DFFA00A15693 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B89E6AE21508B48A0063D359 /* cycle.h */,
+				B829DB931514424500A16758 /* util_opencl.h */,
+				B829DB95151442AA00A16758 /* util_macros.h */,
+				B829DB941514428C00A16758 /* util.h */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		B8F27BAD1526D2D900F76E4A /* TinyXML-2 */ = {
@@ -241,7 +245,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Copying files\"\n\ncp \"$SRCROOT/RayFactorCL/RayFactorGPU.cl\" \"$TARGET_BUILD_DIR/RayFactorGPU.cl\"\ncp \"$SRCROOT/RayFactorCL/RayFactorGPU-lvfm.cl\" \"$TARGET_BUILD_DIR/RayFactorGPU-lvfm.cl\"\n\ncp -r \"$SRCROOT/sample-geometries/\" \"$TARGET_BUILD_DIR\"\n\nif [ ! -d \"$TARGET_BUILD_DIR/Random123\" ]\nthen\n    cp -r \"$SRCROOT/RayFactorCL/Random123\" \"$TARGET_BUILD_DIR/Random123\"\nfi\n";
+			shellScript = "echo \"Copying files\"\n\ncp \"$SRCROOT/RayFactorCL/RayFactorGPU.cl\" \"$TARGET_BUILD_DIR/RayFactorGPU.cl\"\n\ncp -r \"$SRCROOT/sample-geometries/\" \"$TARGET_BUILD_DIR\"\n\nif [ ! -d \"$TARGET_BUILD_DIR/Random123\" ]\nthen\n    cp -r \"$SRCROOT/RayFactorCL/Random123\" \"$TARGET_BUILD_DIR/Random123\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

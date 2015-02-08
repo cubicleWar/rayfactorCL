@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<project>
+	<settings>
+		<globalRayDensity value="1000000" />
+		<description>Benchmarking geometry for the C-122 Sphere to rectangle</description>
+	</settings>
+	<geometry>
+		<primitive type="sphere" >
+			<scale x="1.0" y="1.0" z="1.0" />
+            <translation x="1.0" y="1.0" z="1.5" />
+		</primitive>
+        <primitive type="rectangle" >
+            <scale x="1.0" y="1.0" z="1.0" />
+		</primitive>
+	</geometry>
+</project>

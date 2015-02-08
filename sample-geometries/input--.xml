@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<project>
+	<settings>
+		<globalRayDensity value="1000000" />
+		<description>C-14 Perpendicular rectangles with a common edge</description>
+	</settings>
+	<geometry>
+		<primitive type="rectangle" >
+			<scale x="1.0" y="1.0" z="1.0" />
+		</primitive>
+        <primitive type="rectangle" >
+            <scale x="1.0" y="1.0" z="1.0" />
+            <rotate degrees="90" x="1" y="0" z="0" />
+			<translation x="0" y="-1" z="1" />
+		</primitive>
+	</geometry>
+</project>

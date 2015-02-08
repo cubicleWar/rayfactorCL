@@ -43,3 +43,13 @@ typedef struct Primitive {
     float util1;                // Used to store utility data (Tapered cylinder = top radius; Annulus = small radius^2)
     float util2;                // Used to store utility data (Annulus = large radius^2, Bounding modification for 3D shapes)
 } Primitive;
+
+// Bounding Volumes only need the inverse transform (could remove array m in future)
+typedef struct BoundingVolume {
+    float invm[12];
+    enum PrimitiveType type;
+    int objStartIndex;
+    int objEndIndex;
+    float util1;                // Used to store utility data (Tapered cylinder = top radius; Annulus = small radius^2)
+    float util2;                // Used to store utility data (Annulus = large radius^2, Bounding modification for 3D shapes)
+} BoundingVolume;

@@ -76,7 +76,8 @@ namespace affineTransformation {
     {
         Matrix4 invScale;
         
-        if(fabs(sx) < sEps || fabs(sy) < sEps || fabs(sz) < sEps) {
+        if(fabs(sx) < sEps || fabs(sy) < sEps || fabs(sz) < sEps)
+        {
             fprintf(stderr, "Degenerate scaling transformation!\n");
         }
         
