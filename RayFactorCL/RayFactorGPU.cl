@@ -46,6 +46,7 @@ typedef struct Primitive {
 typedef struct BoundingVolume {
     float invm[12];
     enum PrimitiveType type;
+    int settings;               // Settings - in future will be bit mask currenlty just flag to try and intersect children
     int objStartIndex;
     int objEndIndex;
     float util1;                // Used to store utility data (Tapered cylinder = top radius; Annulus = small radius^2)
@@ -537,6 +538,7 @@ __kernel void runBVGPU(const int fromElementIndex,
     float4 rands;
     float tbest, t;
     int bvIndex;
+    int objectIndex;
     Ray ray;
     
     // Set the PRNG key and seed
@@ -558,6 +560,7 @@ __kernel void runBVGPU(const int fromElementIndex,
     for (int v = 0; v < 4; v++)
     {
         bvIndex = -1;
+        objectIndex = -1;
         tbest = INFINITY;
         rands = rands.yzwx; //rotate the random numbers
         
@@ -590,23 +593,34 @@ __kernel void runBVGPU(const int fromElementIndex,
                 default: break;
             }
             
-            
-            
             if(t < tbest)
             {
-                tbest = t;
-                bvIndex = w;
+                if(bvs[w].settings == 1)
+                {
+                    objectIndex = findObject(bvs[w].objStartIndex, bvs[w].objEndIndex, objects, &ray);
+                    
+                    if(objectIndex != -1)
+                    {
+                        tbest = t;
+                        bvIndex = w;
+                    }
+                }
+                else
+                {
+                    tbest = t;
+                    bvIndex = w;
+                }
             }
         }
         
-        if (bvIndex != -1)
+        if (bvIndex != -1 && objectIndex == -1)
         {
-            int objectIndex = findObject(bvs[bvIndex].objStartIndex, bvs[bvIndex].objEndIndex, objects, &ray);
-          
-            if (objectIndex > -1)
-            {
-                atomic_inc(&hits[fromElementIndex*n_objects + objectIndex]);
-            }
+            objectIndex = findObject(bvs[bvIndex].objStartIndex, bvs[bvIndex].objEndIndex, objects, &ray);
+        }
+        
+        if (objectIndex > -1)
+        {
+            atomic_inc(&hits[fromElementIndex*n_objects + objectIndex]);
         }
     } // end for sub rays
 }

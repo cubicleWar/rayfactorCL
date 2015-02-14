@@ -103,6 +103,13 @@ bool Scene::loadBoundingVolumes(tinyxml2::XMLElement *geometry)
         BoundingVolume *object = new BoundingVolume;
         const char* prType;
         
+        // Check whether children should be imediately check before testing against other objects
+        if(bv->Attribute("intermediateCheck") != NULL)
+        {
+            std::cout << "Immediate check" << std::endl;
+            object->settings = 1;
+        }
+        
         if (bv->Attribute("type") != NULL)
         {
             prType = bv->Attribute("type");

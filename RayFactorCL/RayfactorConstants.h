@@ -48,6 +48,7 @@ typedef struct Primitive {
 typedef struct BoundingVolume {
     float invm[12];
     enum PrimitiveType type;
+    int settings;               // Settings - in future will be bit mask currenlty just flag to try and intersect children
     int objStartIndex;
     int objEndIndex;
     float util1;                // Used to store utility data (Tapered cylinder = top radius; Annulus = small radius^2)
