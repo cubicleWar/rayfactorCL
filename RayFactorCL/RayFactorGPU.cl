@@ -586,10 +586,10 @@ __kernel void runBVGPU(const int fromElementIndex,
                 //
                 case rectangle  : t = rectangleHit(bvs[w].invm, &ray); break;
                 case disc       : t = discHit(bvs[w].invm, &ray); break;
-                case annulus    : t = annulusHit(bvs[w].invm, &ray, objects[w].util1, objects[w].util2); break;
+                case annulus    : t = annulusHit(bvs[w].invm, &ray, bvs[w].util1, bvs[w].util2); break;
                 case cylinder   : t = cylinderHit(bvs[w].invm, &ray); break;
                 case sphere     : t = sphereHit(bvs[w].invm, &ray); break;
-                case frustum    : t = frustumHit(bvs[w].invm, &ray, objects[w].util1); break;
+                case frustum    : t = frustumHit(bvs[w].invm, &ray, bvs[w].util1); break;
                 default: break;
             }
             
