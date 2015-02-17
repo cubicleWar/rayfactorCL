@@ -114,9 +114,27 @@ bool Scene::loadBoundingVolumes(tinyxml2::XMLElement *geometry)
             prType = bv->Attribute("type");
         }
         
-        if (strcmp(prType, "cylinderSurface") == 0)
+        if(strcmp(prType, "cylinderSurface") == 0 || strcmp(prType, "taperedCylinderSurface") == 0 || strcmp(prType, "frustum") == 0)
         {
-            object->type = cylinder;
+            
+            float smallRadius = 1.f;
+            tinyxml2::XMLElement *smallRadiusNode = bv->FirstChildElement( "smallRadius" );
+            
+            if(smallRadiusNode != NULL) {
+                smallRadiusNode->QueryFloatAttribute( "value", &smallRadius);
+            }
+            
+            // Handle whether to use a faster primitive based on its type i.e cone, cylinder, frustum
+            
+            if(smallRadius == 1.0)
+            {
+                object->type = cylinder;
+            }
+            else
+            {
+                object->type = frustum;
+                object->util1 = smallRadius;
+            }
         }
         else if(strcmp(prType, "annulus" ) == 0)
         {
